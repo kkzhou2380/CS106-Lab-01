@@ -9,7 +9,8 @@
  */
 int isTmax(int x)
 {
-    return 2;
+    return !( (x) ^ (~( 1<<31) ));
+    // if x is TMAX , ~x is TMin , 
 }
 
 int test_isTmax(int x)
